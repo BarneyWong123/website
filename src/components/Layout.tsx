@@ -27,10 +27,14 @@ export const Layout = ({ title, children }: LayoutProps) => {
               colors: {
                 'primary-bg': '#000000',
                 'secondary-bg': '#0a0a0a',
-                'card-bg': '#141414',
-                'border-gray': '#2a2a2a',
-                'tech-blue': '#0066ff',
-                'tech-blue-dark': '#0052cc',
+                'card-bg': '#0f1117',
+                'border-gray': '#1a1d2e',
+                'tech-cyan': '#00d4ff',
+                'tech-cyan-dark': '#00b8e6',
+                'tech-purple': '#a855f7',
+                'tech-purple-dark': '#9333ea',
+                'glow-cyan': '#00e5ff',
+                'glow-purple': '#c026d3',
                 'text-primary': '#ffffff',
                 'text-secondary': '#e0e0e0',
                 'text-muted': '#a0a0a0',
@@ -46,6 +50,10 @@ export const Layout = ({ title, children }: LayoutProps) => {
               fontSize: {
                 'hero': ['7rem', { lineHeight: '1', letterSpacing: '-0.04em' }],
                 'display': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
+              },
+              backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                'gradient-glow': 'radial-gradient(circle at center, var(--tw-gradient-stops))',
               }
             }
           }

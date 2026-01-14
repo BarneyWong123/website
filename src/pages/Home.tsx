@@ -7,18 +7,24 @@ export const HomePage = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        {/* Animated Background */}
-        <div class="absolute inset-0 opacity-30">
-          <div class="tech-grid"></div>
+      <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Hero Banner Background Image */}
+        <div class="absolute inset-0">
+          <img 
+            src="https://www.genspark.ai/api/files/s/z8568U7X" 
+            alt="AI-Powered Automation" 
+            class="w-full h-full object-cover opacity-90"
+            style="object-position: center"
+          />
+          <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black"></div>
         </div>
         
         <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-20 relative z-10">
           <div class="max-w-5xl mx-auto text-center fade-in">
             <h1 class="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-white mb-8 leading-none">
-              Empower Your<br />Small Business with<br /><span class="text-tech-blue">AI Agents</span>
+              Empower Your<br />Small Business with<br /><span class="text-gradient bg-gradient-to-r from-tech-cyan via-glow-cyan to-tech-purple bg-clip-text text-transparent">AI Agents</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
+            <p class="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
               Learn, adopt, and scale productivity through intelligent automation — built for Malaysia's entrepreneurs.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -33,16 +39,16 @@ export const HomePage = () => {
             {/* Stats */}
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-4xl mx-auto">
               <div class="stat-card">
-                <div class="text-5xl font-black text-tech-blue mb-2">50+</div>
-                <div class="text-gray-400 text-lg">Malaysian SMEs Served</div>
+                <div class="text-5xl font-black bg-gradient-to-r from-tech-cyan to-glow-cyan bg-clip-text text-transparent mb-2">50+</div>
+                <div class="text-gray-300 text-lg">Malaysian SMEs Served</div>
               </div>
               <div class="stat-card">
-                <div class="text-5xl font-black text-tech-blue mb-2">30+</div>
-                <div class="text-gray-400 text-lg">Hours Saved Weekly</div>
+                <div class="text-5xl font-black bg-gradient-to-r from-tech-cyan to-glow-cyan bg-clip-text text-transparent mb-2">30+</div>
+                <div class="text-gray-300 text-lg">Hours Saved Weekly</div>
               </div>
               <div class="stat-card">
-                <div class="text-5xl font-black text-tech-blue mb-2">95%</div>
-                <div class="text-gray-400 text-lg">Client Satisfaction</div>
+                <div class="text-5xl font-black bg-gradient-to-r from-tech-cyan to-glow-cyan bg-clip-text text-transparent mb-2">95%</div>
+                <div class="text-gray-300 text-lg">Client Satisfaction</div>
               </div>
             </div>
           </div>
@@ -50,7 +56,7 @@ export const HomePage = () => {
 
         {/* Scroll Indicator */}
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <svg class="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="w-6 h-6 text-tech-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
@@ -70,8 +76,8 @@ export const HomePage = () => {
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="feature-card scroll-reveal">
-              <div class="w-16 h-16 bg-tech-blue/10 rounded-lg flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-tech-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="w-16 h-16 bg-gradient-to-br from-tech-cyan/20 to-tech-purple/20 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-tech-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -82,8 +88,8 @@ export const HomePage = () => {
             </div>
 
             <div class="feature-card scroll-reveal" style="animation-delay: 0.1s">
-              <div class="w-16 h-16 bg-tech-blue/10 rounded-lg flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-tech-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="w-16 h-16 bg-gradient-to-br from-tech-cyan/20 to-tech-purple/20 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-tech-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
@@ -94,8 +100,8 @@ export const HomePage = () => {
             </div>
 
             <div class="feature-card scroll-reveal" style="animation-delay: 0.2s">
-              <div class="w-16 h-16 bg-tech-blue/10 rounded-lg flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-tech-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="w-16 h-16 bg-gradient-to-br from-tech-cyan/20 to-tech-purple/20 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-tech-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -106,8 +112,8 @@ export const HomePage = () => {
             </div>
 
             <div class="feature-card scroll-reveal" style="animation-delay: 0.3s">
-              <div class="w-16 h-16 bg-tech-blue/10 rounded-lg flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-tech-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div class="w-16 h-16 bg-gradient-to-br from-tech-cyan/20 to-tech-purple/20 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-tech-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
@@ -149,7 +155,7 @@ export const HomePage = () => {
               <p class="text-gray-400 leading-relaxed mb-4">
                 Step-by-step guide to creating a customer service AI agent in under 30 minutes. No coding required.
               </p>
-              <a href="#" class="text-tech-blue font-semibold hover:underline inline-flex items-center">
+              <a href="#" class="text-tech-cyan font-semibold hover:text-glow-cyan hover:underline inline-flex items-center">
                 Watch Tutorial
                 <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -173,7 +179,7 @@ export const HomePage = () => {
               <p class="text-gray-400 leading-relaxed mb-4">
                 Discover how Malaysian businesses automated invoicing, scheduling, and email management.
               </p>
-              <a href="#" class="text-tech-blue font-semibold hover:underline inline-flex items-center">
+              <a href="#" class="text-tech-cyan font-semibold hover:text-glow-cyan hover:underline inline-flex items-center">
                 Watch Tutorial
                 <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -197,7 +203,7 @@ export const HomePage = () => {
               <p class="text-gray-400 leading-relaxed mb-4">
                 Real case studies showing cost savings, time reduction, and revenue growth from AI adoption.
               </p>
-              <a href="#" class="text-tech-blue font-semibold hover:underline inline-flex items-center">
+              <a href="#" class="text-tech-cyan font-semibold hover:text-glow-cyan hover:underline inline-flex items-center">
                 Watch Tutorial
                 <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -214,7 +220,7 @@ export const HomePage = () => {
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="scroll-reveal">
               <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white mb-8">
-                Our Approach:<br />Teach, Then<br /><span class="text-tech-blue">Implement</span>
+                Our Approach:<br />Teach, Then<br /><span class="bg-gradient-to-r from-tech-cyan to-tech-purple bg-clip-text text-transparent">Implement</span>
               </h2>
               <p class="text-xl text-gray-300 leading-relaxed mb-8">
                 We don't just build solutions. We educate your team to understand, manage, and expand AI capabilities independently.
@@ -272,7 +278,7 @@ export const HomePage = () => {
               <div class="aspect-square bg-gradient-to-br from-tech-blue/20 to-transparent rounded-lg p-12 relative overflow-hidden">
                 <div class="absolute inset-0 tech-pattern opacity-20"></div>
                 <div class="relative z-10">
-                  <svg class="w-full h-full text-tech-blue opacity-80" viewBox="0 0 400 400" fill="none">
+                  <svg class="w-full h-full text-tech-cyan opacity-80" viewBox="0 0 400 400" fill="none">
                     <circle cx="200" cy="200" r="150" stroke="currentColor" stroke-width="2" stroke-dasharray="10 5" />
                     <circle cx="200" cy="200" r="100" stroke="currentColor" stroke-width="2" />
                     <circle cx="200" cy="200" r="50" fill="currentColor" opacity="0.3" />
@@ -363,7 +369,7 @@ export const HomePage = () => {
       <section class="py-32 bg-secondary-bg">
         <div class="max-w-[1600px] mx-auto px-6 lg:px-12 text-center scroll-reveal">
           <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white mb-8">
-            Join 50+ Malaysian Businesses<br />Leading with <span class="text-tech-blue">AI</span>
+            Join 50+ Malaysian Businesses<br />Leading with <span class="bg-gradient-to-r from-tech-cyan to-tech-purple bg-clip-text text-transparent">AI</span>
           </h2>
           <p class="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12">
             Every day without automation is lost productivity. Start your AI transformation today.

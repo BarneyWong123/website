@@ -37,27 +37,45 @@ body {
   background: #0066ff;
 }
 
-/* Button Styles - Palantir Style */
+/* Button Styles - Futuristic Glow */
 .btn-primary {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background: #0066ff;
+  background: linear-gradient(135deg, #00d4ff 0%, #00e5ff 50%, #a855f7 100%);
   color: white;
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 0.01em;
   border-radius: 6px;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #0066ff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
   text-decoration: none;
   text-transform: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #00e5ff 0%, #00d4ff 50%, #c026d3 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
 }
 
 .btn-primary:hover {
-  background: #0052cc;
-  border-color: #0052cc;
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0, 102, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.4), 0 0 60px rgba(168, 85, 247, 0.3);
+}
+
+.btn-primary span {
+  position: relative;
+  z-index: 1;
 }
 
 .btn-secondary {
@@ -69,37 +87,40 @@ body {
   font-size: 0.9rem;
   letter-spacing: 0.01em;
   border-radius: 6px;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #2a2a2a;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #1a1d2e;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.03);
-  border-color: #0066ff;
-  color: #0066ff;
+  background: rgba(0, 212, 255, 0.05);
+  border-color: #00d4ff;
+  color: #00e5ff;
   transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
 }
 
-/* Form Input Styles - Palantir Style */
+/* Form Input Styles - Cyan Glow */
 .form-input {
   width: 100%;
   padding: 0.875rem 1rem;
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 6px;
   color: white;
   font-size: 0.95rem;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
 
 .form-input:focus {
   outline: none;
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
-  box-shadow: 0 0 0 1px #0066ff;
+  box-shadow: 0 0 0 1px #00d4ff, 0 0 20px rgba(0, 212, 255, 0.2);
 }
 
 .form-input::placeholder {
@@ -184,20 +205,21 @@ textarea.form-input {
   transform: translateY(0);
 }
 
-/* Card Styles - Palantir Aesthetic */
+/* Card Styles - Cyan/Purple Glow */
 .feature-card {
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   padding: 2.5rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .feature-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.25), 0 0 60px rgba(168, 85, 247, 0.15);
 }
 
 .video-card {
@@ -206,25 +228,27 @@ textarea.form-input {
 
 .video-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
 }
 
 .stat-card {
   padding: 2rem;
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .stat-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
-  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3), 0 0 40px rgba(0, 229, 255, 0.2);
+  transform: translateY(-4px);
 }
 
 .value-card {
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   padding: 3rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -232,15 +256,15 @@ textarea.form-input {
 }
 
 .value-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
 }
 
 .team-card {
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   padding: 2rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -248,42 +272,42 @@ textarea.form-input {
 }
 
 .team-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
   transform: translateY(-8px);
 }
 
 .service-detail-card {
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   padding: 4rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-detail-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
-  box-shadow: 0 20px 60px rgba(0, 102, 255, 0.12);
+  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 .product-card {
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   padding: 4rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
-  box-shadow: 0 20px 60px rgba(0, 102, 255, 0.12);
+  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
 }
 
 .pricing-card {
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   padding: 3rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -291,35 +315,36 @@ textarea.form-input {
 }
 
 .pricing-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.25);
 }
 
 .pricing-card-featured {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   border-width: 2px;
   background: #000000;
-  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3), 0 0 60px rgba(168, 85, 247, 0.2);
 }
 
 .pricing-card-featured:hover {
   transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 212, 255, 0.4), 0 0 80px rgba(168, 85, 247, 0.3);
 }
 
 .faq-card {
-  background: #0a0a0a;
-  border: 1px solid #2a2a2a;
+  background: #0f1117;
+  border: 1px solid #1a1d2e;
   border-radius: 8px;
   padding: 2.5rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq-card:hover {
-  border-color: #0066ff;
+  border-color: #00d4ff;
   background: #000000;
-  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
 }
 
 /* Stat Highlight - Palantir Style */
