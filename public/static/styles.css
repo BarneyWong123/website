@@ -1,0 +1,426 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0055FF;
+}
+
+/* Button Styles */
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #0055FF;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.025em;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  border: 2px solid #0055FF;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: #0044CC;
+  border-color: #0044CC;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 85, 255, 0.4);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.025em;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  border: 2px solid #333333;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #0055FF;
+  color: #0055FF;
+  transform: scale(1.05);
+}
+
+/* Form Input Styles */
+.form-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: #1A1A1A;
+  border: 2px solid #333333;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #0055FF;
+  background: #111111;
+  box-shadow: 0 0 0 3px rgba(0, 85, 255, 0.1);
+}
+
+.form-input::placeholder {
+  color: #666666;
+}
+
+select.form-input {
+  cursor: pointer;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Tech Grid Background Animation */
+.tech-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridScroll 20s linear infinite;
+}
+
+@keyframes gridScroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+/* Tech Pattern Background */
+.tech-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(0, 85, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 85, 255, 0.1) 0%, transparent 50%);
+  background-size: 200% 200%;
+  animation: patternShift 10s ease infinite;
+}
+
+@keyframes patternShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Fade In Animation */
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll Reveal Animation */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Styles */
+.feature-card {
+  background: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 85, 255, 0.2);
+}
+
+.video-card {
+  transition: all 0.4s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-10px);
+}
+
+.stat-card {
+  padding: 2rem;
+  background: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  transition: all 0.4s ease;
+}
+
+.stat-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  box-shadow: 0 10px 40px rgba(0, 85, 255, 0.2);
+}
+
+.value-card {
+  background: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  padding: 3rem;
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.value-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 85, 255, 0.2);
+}
+
+.team-card {
+  background: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.team-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  transform: translateY(-10px);
+}
+
+.service-detail-card {
+  background: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1.5rem;
+  padding: 4rem;
+  transition: all 0.4s ease;
+}
+
+.service-detail-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  box-shadow: 0 20px 80px rgba(0, 85, 255, 0.15);
+}
+
+.product-card {
+  background: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1.5rem;
+  padding: 4rem;
+  transition: all 0.4s ease;
+}
+
+.product-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  box-shadow: 0 20px 80px rgba(0, 85, 255, 0.15);
+}
+
+.pricing-card {
+  background: #1A1A1A;
+  border: 2px solid #333333;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 85, 255, 0.2);
+}
+
+.pricing-card-featured {
+  border-color: #0055FF;
+  border-width: 3px;
+  background: #111111;
+  box-shadow: 0 10px 40px rgba(0, 85, 255, 0.3);
+}
+
+.pricing-card-featured:hover {
+  transform: scale(1.05);
+}
+
+.faq-card {
+  background: #1A1A1A;
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+}
+
+.faq-card:hover {
+  border-color: #0055FF;
+  background: #111111;
+  box-shadow: 0 10px 40px rgba(0, 85, 255, 0.15);
+}
+
+/* Stat Highlight */
+.stat-highlight {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #333333;
+}
+
+.stat-highlight:last-child {
+  border-bottom: none;
+}
+
+/* Navigation Scroll Effect */
+#mainNav.scrolled {
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Loading State */
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Success Message */
+.success-message {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  color: #00ff00;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Error Message */
+.error-message {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff4444;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service-detail-card,
+  .product-card {
+    padding: 2rem;
+  }
+  
+  .pricing-card {
+    padding: 2rem;
+  }
+}
+
+/* Accessibility */
+.focus-visible:focus {
+  outline: 3px solid #0055FF;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .tech-grid,
+  .tech-pattern,
+  nav,
+  footer,
+  button,
+  .btn-primary,
+  .btn-secondary {
+    display: none;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .form-input {
+    border-width: 3px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    border-width: 3px;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
