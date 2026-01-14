@@ -17,7 +17,7 @@ export const Layout = ({ title, children }: LayoutProps) => {
       <meta name="keywords" content="AI Agents, Automation, Small Business Malaysia, Productivity, Machine Learning, Business Intelligence">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="/static/styles.css">
       <script src="https://cdn.tailwindcss.com"></script>
       <script>
@@ -25,19 +25,27 @@ export const Layout = ({ title, children }: LayoutProps) => {
           theme: {
             extend: {
               colors: {
-                'primary-bg': '#0A0A0A',
-                'secondary-bg': '#111111',
-                'card-bg': '#1A1A1A',
-                'border-gray': '#333333',
-                'tech-blue': '#0055FF',
-                'tech-blue-dark': '#0044CC',
+                'primary-bg': '#000000',
+                'secondary-bg': '#0a0a0a',
+                'card-bg': '#141414',
+                'border-gray': '#2a2a2a',
+                'tech-blue': '#0066ff',
+                'tech-blue-dark': '#0052cc',
+                'text-primary': '#ffffff',
+                'text-secondary': '#e0e0e0',
+                'text-muted': '#a0a0a0',
               },
               fontFamily: {
-                'inter': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                'inter': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
               },
               letterSpacing: {
-                'tighter': '-0.05em',
-                'tight': '-0.025em',
+                'tighter': '-0.06em',
+                'tight': '-0.03em',
+                'wide': '0.02em',
+              },
+              fontSize: {
+                'hero': ['7rem', { lineHeight: '1', letterSpacing: '-0.04em' }],
+                'display': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.03em' }],
               }
             }
           }
