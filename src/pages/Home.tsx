@@ -11,7 +11,7 @@ export const HomePage = () => {
         {/* Hero Banner Background Image */}
         <div class="absolute inset-0">
           <img 
-            src="https://www.genspark.ai/api/files/s/z8568U7X" 
+            src="/static/hero-banner.jpg" 
             alt="AI-Powered Automation" 
             class="w-full h-full object-cover opacity-90"
             style="object-position: center"
@@ -22,17 +22,17 @@ export const HomePage = () => {
         <div class="max-w-[1600px] mx-auto px-6 lg:px-12 py-20 relative z-10">
           <div class="max-w-5xl mx-auto text-center fade-in">
             <h1 class="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-white mb-8 leading-none">
-              Empower Your<br />Small Business with<br /><span class="text-gradient bg-gradient-to-r from-tech-cyan via-glow-cyan to-tech-purple bg-clip-text text-transparent">AI Agents</span>
+              Empower Your<br />Business with<br /><span class="text-gradient bg-gradient-to-r from-tech-cyan via-glow-cyan to-tech-purple bg-clip-text text-transparent">AI Agents</span>
             </h1>
             <p class="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-              Learn, adopt, and scale productivity through intelligent automation — built for Malaysia's entrepreneurs.
+              Learn, adopt, and scale productivity through AI adoption
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a href="#lead-form" class="btn-primary text-lg px-10 py-5">
-                Get Started – Free AI Consultation
+                <span>Get Started – Free AI Consultation</span>
               </a>
               <a href="#why-ai" class="btn-secondary text-lg px-10 py-5">
-                Learn More
+                <span>Learn More</span>
               </a>
             </div>
             
