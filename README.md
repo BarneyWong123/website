@@ -17,6 +17,11 @@
 
 ## 🌐 Live URLs
 
+### GitHub Repository
+- **Repository**: https://github.com/BarneyWong123/website
+- **Branch**: main
+- **Status**: ✅ Code pushed and synced
+
 ### Development Server (Sandbox)
 - **Homepage**: https://3000-iy0lba7w0hw6rz2mv53p9-0e616f0a.sandbox.novita.ai
 - **About**: https://3000-iy0lba7w0hw6rz2mv53p9-0e616f0a.sandbox.novita.ai/about
@@ -24,7 +29,7 @@
 - **Products**: https://3000-iy0lba7w0hw6rz2mv53p9-0e616f0a.sandbox.novita.ai/products
 - **Contact**: https://3000-iy0lba7w0hw6rz2mv53p9-0e616f0a.sandbox.novita.ai/contact
 
-**✨ Now with exact Palantir color scheme and typography!**
+**✨ Now with cyan/purple gradient color scheme and futuristic AI hero banner!**
 
 ### Production (To Be Deployed)
 Ready for Cloudflare Pages deployment
@@ -70,14 +75,16 @@ Ready for Cloudflare Pages deployment
    - Google Maps embed (Malaysia focus)
    - FAQ section
 
-### ✅ Design System (Exact Palantir Aesthetic)
+### ✅ Design System (Futuristic AI Aesthetic)
 - **Colors**: 
-  - Primary BG: `#000000` (pure black - Palantir exact)
+  - Primary BG: `#000000` (pure black)
   - Secondary BG: `#0a0a0a` (nearly black sections)
-  - Card BG: `#141414` (subtle card backgrounds)
-  - Border: `#2a2a2a` (refined subtle borders)
-  - Tech Blue: `#0066ff` (Palantir-exact accent)
-  - Tech Blue Dark: `#0052cc` (hover states)
+  - Card BG: `#0f1117` (navy-tinted cards)
+  - Border: `#1a1d2e` (refined subtle borders)
+  - Tech Cyan: `#00d4ff` (primary accent)
+  - Glow Cyan: `#00e5ff` (hover/glow states)
+  - Tech Purple: `#a855f7` (secondary accent)
+  - Glow Purple: `#c026d3` (hover/glow states)
   - Text Primary: Pure white `#ffffff`
   - Text Secondary: `#e0e0e0`
   - Text Muted: `#a0a0a0`
