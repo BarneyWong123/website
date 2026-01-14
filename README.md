@@ -5,12 +5,15 @@
 **Automateit Malaysia** is a complete, professional, modern enterprise-level website for a company that teaches and encourages small businesses to adopt AI Agents and automation services for productivity gains.
 
 ### Design Philosophy
-- **Ultra-Minimalist Dark Mode**: Inspired by Palantir.com's authoritative tech aesthetic
-- **High-Contrast Typography**: Geometric sans-serif with bold condensed headlines
+- **Pure Black Background**: Exact Palantir aesthetic with #000000 base
+- **Ultra-Minimalist**: Inspired directly by Palantir.com's authoritative tech design
+- **Refined Blue Accent**: #0066ff for CTAs and interactive elements (Palantir-exact)
+- **Subtle Borders**: #2a2a2a for clean separation without distraction
+- **High-Contrast Typography**: Geometric sans-serif (Inter) with bold condensed headlines
 - **Edge-to-Edge Layout**: Full-width sections with generous whitespace
-- **Abstract Tech Visuals**: Data flows, neural networks, AI diagrams
+- **Abstract Tech Visuals**: Minimal grid patterns, data flow aesthetics
 - **Lead Generation Focus**: Multiple strategic form placements
-- **Smooth Animations**: Scroll-triggered reveals, parallax effects, micro-interactions
+- **Smooth Animations**: Scroll-triggered reveals, subtle hover effects
 
 ## 🌐 Live URLs
 
@@ -20,6 +23,8 @@
 - **Services**: https://3000-iy0lba7w0hw6rz2mv53p9-0e616f0a.sandbox.novita.ai/services
 - **Products**: https://3000-iy0lba7w0hw6rz2mv53p9-0e616f0a.sandbox.novita.ai/products
 - **Contact**: https://3000-iy0lba7w0hw6rz2mv53p9-0e616f0a.sandbox.novita.ai/contact
+
+**✨ Now with exact Palantir color scheme and typography!**
 
 ### Production (To Be Deployed)
 Ready for Cloudflare Pages deployment
@@ -65,28 +70,33 @@ Ready for Cloudflare Pages deployment
    - Google Maps embed (Malaysia focus)
    - FAQ section
 
-### ✅ Design System
+### ✅ Design System (Exact Palantir Aesthetic)
 - **Colors**: 
-  - Primary BG: `#0A0A0A` (near-black)
-  - Secondary BG: `#111111`
-  - Card BG: `#1A1A1A`
-  - Border: `#333333`
-  - Tech Blue: `#0055FF`
-  - Text: Pure white `#FFFFFF`
+  - Primary BG: `#000000` (pure black - Palantir exact)
+  - Secondary BG: `#0a0a0a` (nearly black sections)
+  - Card BG: `#141414` (subtle card backgrounds)
+  - Border: `#2a2a2a` (refined subtle borders)
+  - Tech Blue: `#0066ff` (Palantir-exact accent)
+  - Tech Blue Dark: `#0052cc` (hover states)
+  - Text Primary: Pure white `#ffffff`
+  - Text Secondary: `#e0e0e0`
+  - Text Muted: `#a0a0a0`
 
-- **Typography**:
-  - Font: Inter (geometric sans-serif)
-  - Hero Headlines: 80-120px desktop, bold/condensed
-  - Body: 18-22px, medium weight
-  - Tight letter-spacing on titles
+- **Typography** (Palantir-matched):
+  - Font: Inter (geometric sans-serif, exact Palantir choice)
+  - Hero Headlines: 7rem (112px) desktop with -0.04em tracking
+  - Display: 4.5rem (72px) with -0.03em tracking
+  - Body: 0.95rem (15.2px), medium weight (400)
+  - Weights: 300 (light), 400 (regular), 600 (semibold), 700 (bold), 900 (black)
 
-- **Components**:
-  - Pill-shaped CTAs with hover glow
-  - Dark-themed forms with validation
-  - Feature cards with hover lift
-  - Stat cards with animated numbers
-  - Video cards with play buttons
-  - Pricing cards with featured highlight
+- **Components** (Palantir-inspired):
+  - Rounded rectangle CTAs (6px radius) with refined hover
+  - Ultra-dark forms with subtle borders
+  - Feature cards with minimal lift on hover
+  - Stat cards with refined glow effects
+  - Video cards with smooth transitions
+  - Pricing cards with professional spacing
+  - All transitions: 0.2-0.3s cubic-bezier easing
 
 ### ✅ Interactions & Animations
 - Scroll-triggered fade-in reveals
@@ -233,34 +243,57 @@ npx wrangler pages secret put API_KEY --project-name webapp
 3. **Database**: Cloudflare D1 (SQLite), Supabase, PlanetScale
 4. **Analytics**: Google Analytics, Plausible, Cloudflare Web Analytics
 
-## 🎨 Design Specifications
+## 🎨 Design Specifications (Palantir-Exact)
 
-### Color Palette
+### Color Palette (Directly from Palantir)
 ```css
---primary-bg: #0A0A0A       /* Near black background */
---secondary-bg: #111111     /* Section alternates */
---card-bg: #1A1A1A          /* Card backgrounds */
---border-gray: #333333      /* Subtle borders */
---tech-blue: #0055FF        /* Primary accent (CTAs, links) */
---tech-blue-dark: #0044CC   /* Hover states */
---text-white: #FFFFFF       /* Primary text */
---text-gray: #F5F5F5        /* Secondary text */
+/* Backgrounds */
+--primary-bg: #000000         /* Pure black (Palantir exact) */
+--secondary-bg: #0a0a0a       /* Nearly black sections */
+--card-bg: #141414            /* Card backgrounds */
+
+/* Borders & Dividers */
+--border-gray: #2a2a2a        /* Subtle refined borders */
+
+/* Accent Colors */
+--tech-blue: #0066ff          /* Palantir blue accent */
+--tech-blue-dark: #0052cc     /* Hover states */
+
+/* Text Colors */
+--text-primary: #ffffff       /* Primary white text */
+--text-secondary: #e0e0e0     /* Secondary text */
+--text-muted: #a0a0a0         /* Muted text */
 ```
 
-### Typography Scale
+### Typography Scale (Palantir-Matched)
 ```css
-Hero H1: 80-120px (mobile: 48-60px)
-Section H2: 56-80px (mobile: 36-48px)
-Card H3: 28-36px (mobile: 24-28px)
-Body: 18-22px
-Small: 14-16px
+/* Headlines */
+Hero H1: 7rem (112px)         /* Desktop hero headlines */
+         Letter-spacing: -0.04em
+         Font-weight: 900 (Black)
+         Line-height: 1
+
+Display H2: 4.5rem (72px)     /* Section headlines */
+            Letter-spacing: -0.03em
+            Font-weight: 800 (Extra Bold)
+            Line-height: 1.1
+
+/* Body Text */
+Large: 1.25rem (20px)         /* Lead paragraphs */
+Body: 0.95rem (15.2px)        /* Standard body */
+Small: 0.875rem (14px)        /* Fine print */
+
+/* All use Inter font family */
+Font-weights: 300, 400, 600, 700, 900
 ```
 
-### Spacing System
+### Spacing System (Palantir-Style)
 ```css
-Section Padding: 8rem (128px) vertical
+Section Padding: 8rem (128px) vertical, 3-6rem (48-96px) horizontal
 Card Padding: 2.5-4rem (40-64px)
-Element Gaps: 1.5-2rem (24-32px)
+Element Gaps: 1-2rem (16-32px)
+Border Radius: 6-8px (subtle, not rounded)
+Transition: 0.2-0.3s cubic-bezier(0.4, 0, 0.2, 1)
 ```
 
 ## 🔧 Features Not Yet Implemented
